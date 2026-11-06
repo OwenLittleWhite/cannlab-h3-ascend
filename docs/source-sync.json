@@ -1,0 +1,50 @@
+{
+  "note": "Hashes are compared with receipts saved while the CANNLab instance was running. The instance is currently stopped, so this is not a live remote read.",
+  "checks": [
+    {
+      "path": "ComfyUI/comfy/multigpu.py",
+      "sha256": "a24196950d836344cf99e3fbdd12e8f46d6b614e920fd24a50c440fffa952916",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "ComfyUI/comfy/multidevice.py",
+      "sha256": "a7c5e234589a6c7e061e6358c25a100a5b3f6e44e6d755a88e5d77d37d4a40c9",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "ComfyUI/comfy/text_encoders/minimax.py",
+      "sha256": "7a11c432231c8ed226ba25a391d70e56d764625c087cfd0ffe8770e12d6cade7",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "ComfyUI/comfy/weight_adapter/bypass.py",
+      "sha256": "ff8e23d263be86d154d87e16e9c75f395f17805308e25d5ea81e44612ccea2ea",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "ComfyUI/custom_nodes/h3-ascend-cache/__init__.py",
+      "sha256": "4c751b6fac7733a9064e79042754f76e89ec00e294c727e43200843134f2d69d",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "ComfyUI/custom_nodes/h3-ascend-cache/api_nodes.py",
+      "sha256": "01de26518c772304a7ae3660b8a9756fdb1c5b61d95aabf2b9cafdd88edb5e9d",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "ComfyUI/custom_nodes/h3-ascend-cache/service_health.py",
+      "sha256": "080fbf911a8a2e65dc2b786a1c33d1807911fe83084ff70e52dc10abeb794d55",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "api-gateway/h3_api/guard.py",
+      "sha256": "685875b8ba77a120d96564d549640ba8142bcf54cd49a1700a170ca9c3958213",
+      "matches_saved_remote_receipt": true
+    },
+    {
+      "path": "scripts/start.sh",
+      "sha256": "b041ff7598b3648138adb34efa227c89da191761eb98dc5bdab0abda53970348",
+      "matches_saved_remote_receipt": true
+    }
+  ]
+}

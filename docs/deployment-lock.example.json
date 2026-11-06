@@ -1,0 +1,25 @@
+{
+  "comfyui": {
+    "repository": "https://github.com/Comfy-Org/ComfyUI",
+    "commit": "bd34f338ac505ea79e43968753968a464060e609"
+  },
+  "ascend_adapter": {
+    "repository": "https://gitcode.com/Ascend-SACT/MiniMax-H3-Comfy-NPU",
+    "commit": "ac546057f925afafb4aea2597f0fca63763aa3db",
+    "patch_sha256": "9f842a7b1150cf5511b869002ca3ada3867bcde0db2bd8aee7067bf6042453a9"
+  },
+  "runtime": {
+    "python": "3.11.4",
+    "torch": "2.7.1+cpu",
+    "torch_npu": "2.7.1.post4",
+    "cann": "9.0.0"
+  },
+  "storage_root": "/mnt/workspace/h3-ascend",
+  "validated_profile": {
+    "logical_npu_count": 2,
+    "steps": 6,
+    "frames": 124,
+    "width": 736,
+    "height": 416
+  }
+}

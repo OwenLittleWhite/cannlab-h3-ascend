@@ -1,0 +1,27 @@
+{
+  "name": "cannlab-ascend-h3-example",
+  "deployment": "ascend-example",
+  "comfy_url": "http://127.0.0.1:8188",
+  "proxy_url": "http://127.0.0.1:8190",
+  "resident_cache": true,
+  "root": "/mnt/workspace/h3-ascend",
+  "model": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+  "text_model": "minimax_h3_fl2va_int8_convrot.safetensors",
+  "clip": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+  "video_vae": "minimax_h3_video_vae_fp16.safetensors",
+  "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+  "npu_count": "2",
+  "npu_device_paths": [
+    "/dev/davinciN1",
+    "/dev/davinciN2"
+  ],
+  "loras": [
+    {
+      "name": "minimax_h3_turbo_v4_step600_ema.safetensors",
+      "strength": 1.0
+    }
+  ],
+  "worker_health_url": "http://127.0.0.1:8188/h3-ascend/health",
+  "text_tp_transport": "host",
+  "maintenance_file": "/mnt/workspace/h3-ascend/api-gateway/runtime/recovery-maintenance.json"
+}

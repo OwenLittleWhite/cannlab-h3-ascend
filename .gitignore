@@ -1,0 +1,45 @@
+# Runtime secrets and state
+.env
+.env.*
+!.env.example
+api-gateway/config/ascend.json
+api-gateway/runtime/
+api-gateway/.venv/
+api-gateway/connection.json
+api-gateway/token
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.pid
+*.zip
+
+# Model weights, media, and generated data
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.png
+*.jpg
+*.jpeg
+outputs/
+output/
+evidence/
+experiments/
+cache/
+runtime/
+
+# Python and local tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+

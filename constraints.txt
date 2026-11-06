@@ -1,0 +1,9 @@
+torch==2.7.1+cpu
+torch-npu==2.7.1.post4
+torchvision==0.22.1
+torchaudio==2.7.1
+numpy==1.26.4
+transformers>=4.57.1,<5
+av==16.1.0
+comfy-kitchen==0.2.30
+comfy-aimdo==0.4.13

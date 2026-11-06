@@ -1,0 +1,19 @@
+H3 Ascend Persistent Conditioning Adapter
+
+The wrapper and instrumentation code are GPL-3.0-or-later, compatible with
+the ComfyUI scheduling code from which the NPU placement follows.
+
+_vendor/serialize.py is copied without modification from:
+  Mu5hr00moO/ComfyUI-MiniMaxH3-CLIPCached
+  commit 507c1ecd7c92439134e097e0fac34381340ab8c9
+  https://github.com/Mu5hr00moO/ComfyUI-MiniMaxH3-CLIPCached
+It retains the MIT license in _vendor/LICENSE.
+
+The upstream CLIPCached proxy and route/UI machinery are not installed.
+The Ascend adapter uses the stock H3 reference preprocessing and Qwen TP
+encoder on cache misses, and restores the entire conditioning plus initial
+AV latent on hits. It does not approximate diffusion or modify model math.
+
+Default validation workflow uses native dense attention and HCCL. Other
+attention/communication choices are diagnostic experiments, not enabled by
+the persistent-cache workflow.
