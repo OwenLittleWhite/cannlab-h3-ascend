@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-09",
+  "tokenizer": {
+    "passed": true,
+    "actual_comfy_tokenizer": true,
+    "device": "cpu",
+    "model_weights_loaded": false,
+    "token_ids": {
+      "<d>": [
+        151669
+      ],
+      "</d>": [
+        151670
+      ],
+      "<|cutoff|>": [
+        151671
+      ],
+      "<|lyrics_start|>": [
+        151672
+      ],
+      "<|lyrics_end|>": [
+        151673
+      ],
+      "<|caption_start|>": [
+        151674
+      ],
+      "<|caption_end|>": [
+        151675
+      ]
+    }
+  },
+  "isolated_registration_and_ast_test": {
+    "passed": true,
+    "cpu_only": true,
+    "model_weights_loaded": false,
+    "special_token_ids": {
+      "<d>": [
+        151669
+      ],
+      "</d>": [
+        151670
+      ],
+      "<|cutoff|>": [
+        151671
+      ],
+      "<|lyrics_start|>": [
+        151672
+      ],
+      "<|lyrics_end|>": [
+        151673
+      ],
+      "<|caption_start|>": [
+        151674
+      ],
+      "<|caption_end|>": [
+        151675
+      ]
+    },
+    "dialogue_ids": [
+      151669,
+      9707,
+      13,
+      151670,
+      151671
+    ],
+    "unrelated_ast_preserved": true,
+    "plain_text_unchanged": true,
+    "source_sha256": "7c85df2c2d9f3639c823a9fd50c9e364d7f4ba798859094b0d6a3652651c7ac5"
+  },
+  "audio_sampling_fix_preserved": true,
+  "historical_results_preserved": true,
+  "external_api_checks_passed": true,
+  "external_api_check_count": 10,
+  "new_video_generated": false
+}

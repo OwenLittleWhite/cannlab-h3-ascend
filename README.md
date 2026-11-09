@@ -14,6 +14,8 @@ An open-source deployment adapter for running ComfyUI and MiniMax H3 on an Ascen
 
 The repository contains source code and configuration templates. It does not contain model weights, API tokens, user images, generated videos, runtime logs, or live service URLs.
 
+The 2026-11-09 update backports upstream PR #15808, registering the seven H3 dialogue, lyrics, and caption tokens with their released IDs. The audio schedule correction from PR #15243 was already included in the pinned base. See [upstream update notes](docs/upstream-update-20261109.md).
+
 ## Validated environment
 
 The deployment was validated on CANNLab A3 with two logical Ascend NPU devices exposed by a 910C instance, CANN 9.0.0, Python 3.11.4, PyTorch 2.7.1+cpu, and torch_npu 2.7.1.post4. The service used the platform's preinstalled CANN/PyTorch base and a persistent `/mnt/workspace` volume.

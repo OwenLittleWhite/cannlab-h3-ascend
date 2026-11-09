@@ -1,5 +1,5 @@
 {
-  "note": "Hashes are compared with receipts saved while the CANNLab instance was running. The instance is currently stopped, so this is not a live remote read.",
+  "note": "Source hashes correspond to saved deployment receipts. The tokenizer entry was updated after live activation of PR #15808 on 2026-11-09; other entries retain their earlier receipts.",
   "checks": [
     {
       "path": "ComfyUI/comfy/multigpu.py",
@@ -13,8 +13,9 @@
     },
     {
       "path": "ComfyUI/comfy/text_encoders/minimax.py",
-      "sha256": "7a11c432231c8ed226ba25a391d70e56d764625c087cfd0ffe8770e12d6cade7",
-      "matches_saved_remote_receipt": true
+      "sha256": "7c85df2c2d9f3639c823a9fd50c9e364d7f4ba798859094b0d6a3652651c7ac5",
+      "matches_saved_remote_receipt": true,
+      "receipt_date": "2026-11-09"
     },
     {
       "path": "ComfyUI/comfy/weight_adapter/bypass.py",

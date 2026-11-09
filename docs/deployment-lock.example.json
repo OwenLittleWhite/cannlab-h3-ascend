@@ -21,5 +21,12 @@
     "frames": 124,
     "width": 736,
     "height": 416
-  }
+  },
+  "backports": [
+    {
+      "upstream_pr": 15808,
+      "purpose": "Register seven H3 dialogue/lyrics/caption special tokens",
+      "text_encoder_sha256": "7c85df2c2d9f3639c823a9fd50c9e364d7f4ba798859094b0d6a3652651c7ac5"
+    }
+  ]
 }
